@@ -15,9 +15,7 @@ body{
     height:70px;
     width:100%;
         align-items: center;
-        z-index: 1000;
-        position:fixed;
-        top:0;
+
 
 }
 i{
@@ -82,19 +80,19 @@ input{
     width:32%;
     background-color:#1f1e1e ;
     position:fixed;
-    top:70px; /* sit below the fixed nav */
         border-radius: 3%;
 
 }
 
 .right{
     height:490px;
-    z-index: 100;
     width:100%;
     background-color:#1f1e1e;
     position:fixed;
     left:33%;
         border-radius: 3%;
+        z-index: 100;
+        overflow-y: scroll;
 
 }
 .library{
