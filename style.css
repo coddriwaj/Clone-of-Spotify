@@ -1,0 +1,263 @@
+*{
+    margin:0px;
+    padding:0px;
+    color:white;
+    border-width: 0px;
+
+}
+body{
+    background-color: black;
+}
+.nav{
+    display:flex;
+    justify-content:space-between;
+    background-color:black ;
+    height:70px;
+    width:100%;
+        align-items: center;
+        z-index: 1000;
+        position:fixed;
+        top:0;
+
+}
+i{
+    font-size: 35px;
+    font-weight: bold;
+}
+a{
+   text-decoration: none;
+    font-weight: bolder;
+}
+
+.login{
+    color:black;
+}
+.log{
+    height:55px;
+    width:120px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35%;
+}
+.house{
+    width:55px;
+    height:50px;
+    background-color:#1f1e1e;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+height:50px;
+width:20%;
+    background-color:#1f1e1e;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+.fa-solid fa-magnifying-glass{
+    font-size:25px;
+    font-weight: bold;
+    height:100%;
+    width:40px;
+    background-color:#1f1e1e;
+
+}
+input{
+    height:100%;
+    width:100%;
+    background-color:#1f1e1e ;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.left{
+    height:490px;
+    width:32%;
+    background-color:#1f1e1e ;
+    position:fixed;
+    top:70px; /* sit below the fixed nav */
+        border-radius: 3%;
+
+}
+
+.right{
+    height:490px;
+    z-index: 100;
+    width:100%;
+    background-color:#1f1e1e;
+    position:fixed;
+    left:33%;
+        border-radius: 3%;
+
+}
+.library{
+    width:100%;
+    height:60px;
+    background-color:#1f1e1e ;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#li{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#plus{
+    margin-top:20px;
+    margin-right: 20px;
+}
+.second{
+    background-color: #313030;
+    margin:50px 10px 10px 10px;
+    border-radius: 3%;
+    height:130px;
+    display:flex;
+    flex-direction: column;
+}
+button{
+    background-color: white;
+    color:black;
+    height:30px;
+    width:120px;
+    border-radius: 20%;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.secondp{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.seconda{
+    margin-top:15px;
+    margin-left:25px;
+}
+.third{
+    background-color:#313030 ;
+    height:30px;
+        margin:20px 10px 10px 10px;
+
+    border-radius:3%;
+
+}
+.thirda{
+    margin-left: 25px;
+    padding-top: 10px;
+}
+.fourth{
+    display:flex;
+    justify-content: space-between;
+margin-top: 30px;
+}
+.fourtha{
+    font-size: 13px;
+    margin-right: 5px;
+}
+#legal{
+    margin-left: 35px;
+}
+#cookies{
+    margin-right: 40px;
+}
+.fifth{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+p{
+    font-size: 20px;
+}
+#about{
+    margin-left: 35px;
+
+}
+#accessibility{
+    margin-right:250px;
+}
+#english{
+    background-color: #1f1e1e;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    margin-top: 30px;
+}
+#globe{
+font-size: 15px;
+padding-left: 3px;
+margin-right: 5px;
+}
+#lower{
+    position:fixed;
+    bottom:7px;
+    height:70px;
+    width:100%;
+    background-color: purple;
+    display:flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+#sign{
+    background-color: white;
+    color:black;
+    margin-right: 30px;
+    height:40px;
+    margin-top: 10px;
+}
+.paragraph{
+    margin-left:35px;
+margin-top: 10px;
+}
+.top{
+    margin-left: 20px;
+    margin-top:20px ;
+    display:flex;
+}
+.firstrow{
+    height:235px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display:flex;
+}
+.element{
+
+    width:180px;
+    background-color: #1f1e1e;
+}
+.element{
+    width:180px;
+    background-color: #1f1e1e;
+    position:relative;
+    overflow:visible;
+}
+img{
+    margin:5px 15px 5px 5px;
+    height:145px;
+    display:block;
+}
+#best{
+    margin-right:450px;
+}
+.play-icon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:opacity 0.15s ease, transform 0.15s ease;
+    pointer-events:auto;
+}
+.element:hover .play-icon{
+    opacity:1;
+}
