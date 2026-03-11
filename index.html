@@ -3,62 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Clone</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+    <!-- NAV -->
     <div class="nav">
-<i class="fa-brands fa-spotify"></i>
-<div class="house"><i class="fa-solid fa-house"></i></div>
-<div class="input">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="What do you what to play?"></div>
-    
-        <a href="premium">Premium</a>
-        <a href="Support">Support</a>
-        <a href="Download">Download</a>
-        <a href="Sign up">Sign up</a>
-        <div class="log">
-        <a  class="login"href="Login">Log in</a></div><br><br>
+        <i class="fa-brands fa-spotify"></i>
+        <div class="house"><i class="fa-solid fa-house"></i></div>
+        <div class="input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="What do you want to play?">
+        </div>
+        <a href="#">Premium</a>
+        <a href="#">Support</a>
+        <a href="#">Download</a>
+        <a href="#">Sign up</a>
+        <div class="log"><a class="login" href="#">Log in</a></div>
     </div>
+
+    <!-- LEFT SIDEBAR -->
     <div class="left">
         <div class="library">
-        <p id="li">Your Library</p>
-        <i id="plus" class="fa-solid fa-plus"></i>
+            <p id="li">Your Library</p>
+            <i id="plus" class="fa-solid fa-plus"></i>
+        </div>
+        <div class="second">
+            <p class="seconda">Create your first playlist</p>
+            <p class="secondp">It's easy, we'll help you</p>
+            <button>Create Playlist</button>
+        </div>
+        <div class="third">
+            <p class="thirda">Let's find some podcasts to follow</p>
+        </div>
+        <div class="fourth">
+            <div id="legal"><a href="#" class="fourtha">Legal</a></div>
+            <a href="#" class="fourtha">Safety & Privacy</a>
+            <a href="#" class="fourtha">Privacy Policy</a>
+            <div id="cookies"><a href="#" class="fourtha">Cookies</a></div>
+        </div>
+        <div class="fifth">
+            <div id="about"><a href="#">About Ads</a></div>
+            <div id="accessibility"><a href="#">Accessibility</a></div>
+        </div>
+        <button id="english"><i id="globe" class="fa-solid fa-globe"></i>English</button>
     </div>
-    <div class="second">
-        <p class="seconda">Create your first playlist</p>
-        <p class="secondp">Its easy,we'll help you</p>
-        <button>Create Playlist</button>
-    </div>
-    <div class="third">
-        <p class="thirda">Let's find some podcast to follow</p>
-    </div>
-    <div class="fourth">
-       <div id="legal"> <a href="legal"class="fourtha">Legal</a></div>
-        <a href="safety" class="fourtha">Safety and privacy center</a>
-        <a href="privacy" class="fourtha">Privacy policy</a>
-       <div id="cookies"> <a href="cookies"class="fourtha">Cookies</a></div>
-    </div>
-    <div class="fifth">
-       <div  id="about"> <a href="about">About Ads</a></div>
-        <div id="accessibility"><a href="accessibility">Accessibility</a></div>
-    </div>
-    <button id="english"><i id="globe" class="fa-solid fa-globe"></i>English</button>
-    </div>
-    <div id="lower"><div class="paragraph">Preview of Spotify</p>
-    <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p></div>
-<div><button id="sign">Sign up free</button></div></div>
+
+    <!-- MAIN CONTENT -->
     <div class="right">
         <div class="top"><h1 id="best">Best Pop Albums of 2025</h1><h3>Show all</h3></div>
         <div class="firstrow">
             <div class="element">
                 <img src="addison.jpg">
                 <i class="fa-solid fa-play play-icon"></i>
-
                 <h2>Addison</h2>
-                <h3>Addison rae</h3>
+                <h3>Addison Rae</h3>
             </div>
             <div class="element">
                 <img src="barely.jpg">
@@ -70,7 +71,7 @@
                 <img src="wishbone.jpg">
                 <i class="fa-solid fa-play play-icon"></i>
                 <h2>Wishbone</h2>
-                <h3>Conan Grey</h3>
+                <h3>Conan Gray</h3>
             </div>
             <div class="element">
                 <img src="doja.jpg">
@@ -84,15 +85,15 @@
                 <h2>KARMA</h2>
                 <h3>Stray Kids</h3>
             </div>
-        </div> 
-        <div class="top"><h1 id="best">Best Pop Albums of 2025</h1><h3>Show all</h3></div>
+        </div>
+
+        <div class="top"><h1 id="best">Featured Artists 2025</h1><h3>Show all</h3></div>
         <div class="firstrow">
             <div class="element">
                 <img src="addison.jpg">
                 <i class="fa-solid fa-play play-icon"></i>
-
                 <h2>Addison</h2>
-                <h3>Addison rae</h3>
+                <h3>Addison Rae</h3>
             </div>
             <div class="element">
                 <img src="barely.jpg">
@@ -104,7 +105,7 @@
                 <img src="wishbone.jpg">
                 <i class="fa-solid fa-play play-icon"></i>
                 <h2>Wishbone</h2>
-                <h3>Conan Grey</h3>
+                <h3>Conan Gray</h3>
             </div>
             <div class="element">
                 <img src="doja.jpg">
@@ -118,45 +119,48 @@
                 <h2>KARMA</h2>
                 <h3>Stray Kids</h3>
             </div>
-            
-    </div>
-            <div class="top"><h1 id="best">Best Pop Albums of 2025</h1><h3>Show all</h3></div>
-        <div class="firstrow">
-            <div class="element">
-                <img src="addison.jpg">
-                <i class="fa-solid fa-play play-icon"></i>
-
-                <h2>Addison</h2>
-                <h3>Addison rae</h3>
-            </div>
-            <div class="element">
-                <img src="barely.jpg">
-                <i class="fa-solid fa-play play-icon"></i>
-                <h2>I Barely Know Her</h2>
-                <h3>Sombr</h3>
-            </div>
-            <div class="element">
-                <img src="wishbone.jpg">
-                <i class="fa-solid fa-play play-icon"></i>
-                <h2>Wishbone</h2>
-                <h3>Conan Grey</h3>
-            </div>
-            <div class="element">
-                <img src="doja.jpg">
-                <i class="fa-solid fa-play play-icon"></i>
-                <h2>Vie</h2>
-                <h3>Doja Cat</h3>
-            </div>
-            <div class="element">
-                <img src="karma.jpg">
-                <i class="fa-solid fa-play play-icon"></i>
-                <h2>KARMA</h2>
-                <h3>Stray Kids</h3>
-            </div>
-        </div> 
+        </div>
     </div>
 
-    <script src="script.js">
-    </script>
+    <!-- ✅ MUSIC PLAYER BAR (replaces the old purple #lower bar) -->
+    <div id="player-bar">
+        <!-- Left: song info -->
+        <div class="player-left">
+            <img id="player-cover" src="addison.jpg" alt="cover">
+            <div class="player-info">
+                <span id="player-title">Select a song</span>
+                <span id="player-artist">–</span>
+            </div>
+            <i class="fa-regular fa-heart" style="margin-left:15px;font-size:18px;cursor:pointer;"></i>
+        </div>
+
+        <!-- Center: controls + progress -->
+        <div class="player-center">
+            <div class="player-controls">
+                <button class="ctrl-btn" id="btn-shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="ctrl-btn" id="btn-prev"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="ctrl-btn play-pause-btn" id="btn-play-pause">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="ctrl-btn" id="btn-next"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="ctrl-btn" id="btn-repeat"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div class="player-progress">
+                <span id="current-time">0:00</span>
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <!-- Right: volume -->
+        <div class="player-right">
+            <button class="ctrl-btn" id="btn-mute"><i class="fa-solid fa-volume-high"></i></button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.8">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
