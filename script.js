@@ -1,45 +1,41 @@
-// ─── Song Data ───────────────────────────────────────────────────────────────
-// Add your MP3 file paths here. Put your MP3 files in the same folder as index.html
-// Example: if your song file is "addison.mp3", write src: "addison.mp3"
+
 const songs = [
   {
     title: "Addison",
     artist: "Addison Rae",
     cover: "addison.jpg",
-    src: "songs/addison.mp3",   // ← Change this to your actual MP3 file path
+    src: "addison.mp3",  
   },
   {
     title: "I Barely Know Her",
     artist: "Sombr",
     cover: "barely.jpg",
-    src: "songs/barely.mp3",
+    src: "barely.mp3",
   },
   {
     title: "Wishbone",
     artist: "Conan Gray",
     cover: "wishbone.jpg",
-    src: "songs/wishbone.mp3",
+    src: "wishbone.mp3",
   },
   {
     title: "Vie",
     artist: "Doja Cat",
     cover: "doja.jpg",
-    src: "songs/doja.mp3",
+    src: "doja.mp3",
   },
   {
     title: "KARMA",
     artist: "Stray Kids",
     cover: "karma.jpg",
-    src: "songs/karma.mp3",
+    src: "karma.mp3",
   },
 ];
 
-// ─── Player State ─────────────────────────────────────────────────────────────
 let currentIndex = 0;
 let isPlaying = false;
 const audio = new Audio();
 
-// ─── DOM References ───────────────────────────────────────────────────────────
 const playerBar      = document.getElementById("player-bar");
 const playerCover    = document.getElementById("player-cover");
 const playerTitle    = document.getElementById("player-title");
@@ -54,7 +50,6 @@ const durationEl     = document.getElementById("duration");
 const volumeSlider   = document.getElementById("volume-slider");
 const btnMute        = document.getElementById("btn-mute");
 
-// ─── Load a Song ─────────────────────────────────────────────────────────────
 function loadSong(index) {
   const song = songs[index];
   audio.src = song.src;
@@ -65,17 +60,14 @@ function loadSong(index) {
   currentTimeEl.textContent = "0:00";
   durationEl.textContent = "0:00";
 
-  // Highlight active card
+ 
   document.querySelectorAll(".element").forEach((el, i) => {
     el.classList.toggle("active-song", i % songs.length === index);
   });
 }
-
-// ─── Play / Pause ─────────────────────────────────────────────────────────────
 function playSong() {
   isPlaying = true;
   audio.play().catch(() => {
-    // If file not found, show a friendly alert
     alert(`Song file not found!\nPlease add the MP3 file:\n"${songs[currentIndex].src}"\nto your project folder.`);
     isPlaying = false;
     updatePlayPauseBtn();
@@ -101,7 +93,6 @@ function updatePlayPauseBtn() {
     : '<i class="fa-solid fa-play"></i>';
 }
 
-// ─── Next / Prev ──────────────────────────────────────────────────────────────
 function nextSong() {
   currentIndex = (currentIndex + 1) % songs.length;
   loadSong(currentIndex);
@@ -114,7 +105,6 @@ function prevSong() {
   if (isPlaying) playSong();
 }
 
-// ─── Progress Bar ─────────────────────────────────────────────────────────────
 audio.addEventListener("timeupdate", () => {
   if (!audio.duration) return;
   const pct = (audio.currentTime / audio.duration) * 100;
@@ -140,7 +130,6 @@ function formatTime(secs) {
   return `${m}:${s}`;
 }
 
-// ─── Volume ───────────────────────────────────────────────────────────────────
 volumeSlider.addEventListener("input", () => {
   audio.volume = volumeSlider.value;
   updateMuteBtn();
@@ -162,10 +151,9 @@ function updateMuteBtn() {
   }
 }
 
-// ─── Card Click → Play That Song ─────────────────────────────────────────────
 document.querySelectorAll(".element").forEach((el, i) => {
   el.addEventListener("click", () => {
-    const songIndex = i % songs.length; // handles repeated rows
+    const songIndex = i % songs.length; 
     if (songIndex === currentIndex && isPlaying) {
       pauseSong();
     } else {
@@ -176,12 +164,10 @@ document.querySelectorAll(".element").forEach((el, i) => {
   });
 });
 
-// ─── Button Events ────────────────────────────────────────────────────────────
 btnPlayPause.addEventListener("click", togglePlayPause);
 btnNext.addEventListener("click", nextSong);
 btnPrev.addEventListener("click", prevSong);
 
-// ─── Init ─────────────────────────────────────────────────────────────────────
 loadSong(currentIndex);
 audio.volume = 0.8;
 volumeSlider.value = 0.8;
