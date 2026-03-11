@@ -37,7 +37,7 @@ a{
     display:flex;
     justify-content: center;
     align-items: center;
-    border-radius: 35%;
+    border-radius: 10px;
 }
 .house{
     width:55px;
